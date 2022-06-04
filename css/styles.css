@@ -1,0 +1,349 @@
+/* Colors  *
+ /* Primary text Color */
+ #212121
+  /* Secondary text Color */
+ #757575
+/* Accent Color */
+#2196F3
+/* Main background Color */
+ #FFFFFF
+/* Secondary background Color */
+#F5F4FA
+/* Brand Color*/
+ #2F303A
+ 
+/* About root */
+:root{--primary-text-color:#212121;
+  --secondary-text-color:#757575;  
+--accet-color:#2196F3 ;
+--main-background-color:  #FFFFFF ;
+--secondary-background-color: #F5F4FA;
+--brand-color:#2F303A;
+}
+
+
+body {
+font-family: 'Roboto', sans-serif;
+color:#212121 ;
+background-color: #FFFFFF;
+letter-spacing: 0.03em;
+font-size: 14px;
+}
+     /*About hidden  */
+.is-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+/* About logo */
+.nav-logo {font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:#212121;}
+    .nav-logo {color:  #212121;}
+    .nav-logo-accent { color:#2196F3;}
+
+
+/* About nav */
+.nav-link {font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:#212121;
+}
+.nav-link{color: #212121;}
+.nav-link:hover,
+.nav-link:focus
+.nav-list.nav-link.current {
+     color: #2196F3;
+ }
+
+
+/* About contacts */
+.contact-link {
+    
+    font-family: inherit;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color: #2196F3;
+}
+
+    .contact-link { color:#757575;}
+    .contact-link:hover,
+    .contact-link:focus {color: #2196F3;}
+    
+    .contact-mobile {position: absolute;
+        
+        font-family: inherit;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color: #757575;
+}
+
+    .contact-mobile { color:#757575;}
+    .contact-mobile:hover,
+    .contact-mobile:focus {color: #2196F3;}
+
+
+
+ .nav-logo,.nav-link, .contact-link, .contact-mobile {text-decoration: none;}
+
+ /* About portfolio buttons */
+.portfolio-button {font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    cursor: pointer;}
+
+    .portfolio-button {color:#212121; background-color:#F5F4FA;}
+    .portfolio-button:hover,
+    .portfolio-button:focus{color:#FFFFFF;
+        background-color: #2196F3; 
+    }
+    
+/* About hero */
+.hero {background-color: #2F303A}
+.hero-title { font-family: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    }
+  
+     
+    /* About hero-button */
+.hero-button 
+ {font-family: inherit;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+cursor: pointer;
+ color:#FFFFFF;}
+    
+ .hero-button { background-color: #2196F3;}
+    .hero-button:hover,
+    .hero-button:focus{
+        background-color:  #188CE8;
+    }
+   
+/* About list */
+.list, .gallery,.button-list,.nav-list {list-style: none;}
+/* About decorations */
+.nav-link,.nav-logo, .contact-link,.contact-mobile, .item {
+    text-decoration: none;}
+
+/* About portfolio benefits */
+.list-item {font-family:inherit;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #212121;}
+
+/* About studio benefits */
+.benefits{font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    }
+    /* About "p" Studio*/
+.p-item {font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+    }
+    /* About "p" Portfolio */
+.p {font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+    }
+    /* About our company */
+.company {font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: #212121;}
+        /*Gallery list portfolio  */
+       .gallery-list { font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.06em;
+
+color: #212121;}
+
+/* Gallery item Portfolio */
+.gallery-item {font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+
+letter-spacing: 0.03em;
+
+color: #757575;}
+
+/* About company list Studio*/
+.company-list {font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: #212121;}
+   /* About company item Studio*/ 
+    .company-item {
+        font-family: inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+color: #757575;
+
+    }
+
+/* About footer-logo */
+.footer-logo {font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;}
+
+    .footer-logo { color: #FFFFFF;}
+.footer-logo-accent {color:#2196F3 ;}
+
+/* About footer */
+.footer-content{
+    background-color:#2F303A;
+
+}
+.footer-logo, .footer-link,.footer-maps, .footer-phone {text-decoration:none; }
+   
+.footer-maps {font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:1.71;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color:#FFFFFF} 
+    .footer-maps:hover,
+    .footer-maps:focus {color:#2196F3;}
+
+    .footer-link {font-family: inherit;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+        /* or 171% */
+        letter-spacing: 0.03em;
+        color:rgba(255, 255, 255, 0.6);
+    }    
+    .footer-link:hover,
+    .footer-link:focus {color: #2196F3;}
+
+       .footer-phone {font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+            
+            letter-spacing: 0.03em;
+            color:rgba(255, 255, 255, 0.6);
+        }     
+            
+        .footer-phone:hover,
+        .footer-phone:focus {color: #2196F3;}     
+        
+
+        
+      
+
+
+
+
+    
+
+    
+        
+
+
+ 
