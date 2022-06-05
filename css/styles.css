@@ -24,8 +24,8 @@
 
 body {
 font-family: 'Roboto', sans-serif;
-color:#212121 ;
-background-color: #FFFFFF;
+color:var(--primary-text-color) ;
+background-color: var(--main-background-color);
 letter-spacing: 0.03em;
 font-size: 14px;
 }
@@ -43,38 +43,60 @@ font-size: 14px;
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-/* About logo */
-.nav-logo {font-family: 'Raleway';
+  /* About header container */
+  .container-header {width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    
+background-color:tomato;}
+
+   /* About logo */
+.nav-logo { padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:#212121;}
-    .nav-logo {color:  #212121;}
-    .nav-logo-accent { color:#2196F3;}
+    color:var(--primary-text-color);
+}
+    .nav-logo {color: var(--primary-text-color);}
+    .nav-logo-accent { color:var(--accet-color);}
 
 
 /* About nav */
-.nav-link {font-family: inherit;
+.nav {display: flex;
+    align-items: center;}
+.nav-link {}
+.nav-link {padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+    .nav-link {font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:#212121;
+    color:var(--primary-text-color);
 }
-.nav-link{color: #212121;}
+
+.nav-link{color: var(--primary-text-color);}
 .nav-link:hover,
 .nav-link:focus
 .nav-list.nav-link.current {
-     color: #2196F3;
+     color: var(--accet-color);
  }
 
 
 /* About contacts */
+
 .contact-link {
-    
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-family: inherit;
 font-style: normal;
 font-weight: 500;
@@ -82,16 +104,19 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: #2196F3;
+color: var(--accet-color);
+
 }
 
-    .contact-link { color:#757575;}
+    .contact-link { color: var(--secondary-text-color);}
     .contact-link:hover,
-    .contact-link:focus {color: #2196F3;}
+    .contact-link:focus {color: var(--accet-color);}
     
-    .contact-mobile {position: absolute;
+    .contact-mobile {
+        padding-top: 32px;
+        padding-bottom: 32px;}
         
-        font-family: inherit;
+    .contact-mobile {font-family: inherit;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -99,6 +124,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 
 color: #757575;
+
 }
 
     .contact-mobile { color:#757575;}
@@ -130,7 +156,11 @@ color: #757575;
     }
     
 /* About hero */
-.hero {background-color: #2F303A}
+.hero {width: 1600px;
+    background-color: #2F303A;
+   
+}
+.hero-title {text-align: center;}
 .hero-title { font-family: inherit;
     font-style: normal;
     font-weight: 900;
