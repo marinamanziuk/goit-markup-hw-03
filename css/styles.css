@@ -1,24 +1,11 @@
-/* Colors  *
- /* Primary text Color */
- #212121
-  /* Secondary text Color */
- #757575
-/* Accent Color */
-#2196F3
-/* Main background Color */
- #FFFFFF
-/* Secondary background Color */
-#F5F4FA
-/* Brand Color*/
- #2F303A
- 
 /* About root */
 :root{--primary-text-color:#212121;
   --secondary-text-color:#757575;  
---accet-color:#2196F3 ;
+--accent-color:#2196F3 ;
 --main-background-color:  #FFFFFF ;
 --secondary-background-color: #F5F4FA;
 --brand-color:#2F303A;
+--hero-button-color:#188CE8;
 }
 
 
@@ -29,7 +16,10 @@ background-color: var(--main-background-color);
 letter-spacing: 0.03em;
 font-size: 14px;
 }
-     /*About hidden  */
+/* About list */
+.list {list-style: none;}
+
+/*About hidden  */
 .is-hidden{
     position: absolute;
     width: 1px;
@@ -43,18 +33,12 @@ font-size: 14px;
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  /* About header container */
-  .container-header {width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    display: flex;
-    align-items: center;
+  
     
-background-color:tomato;}
+
 
    /* About logo */
-.nav-logo { padding-top: 25px;
-    padding-bottom: 25px;
+.nav-logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -64,16 +48,7 @@ background-color:tomato;}
     color:var(--primary-text-color);
 }
     .nav-logo {color: var(--primary-text-color);}
-    .nav-logo-accent { color:var(--accet-color);}
-
-
-/* About nav */
-.nav {display: flex;
-    align-items: center;}
-.nav-link {}
-.nav-link {padding-top: 32px;
-    padding-bottom: 32px;
-}
+    .nav-logo-accent { color:var(--accent-color);}
 
     .nav-link {font-family: inherit;
     font-style: normal;
@@ -83,20 +58,19 @@ background-color:tomato;}
     letter-spacing: 0.02em;
     color:var(--primary-text-color);
 }
-
-.nav-link{color: var(--primary-text-color);}
+.nav-link {color: var(--primary-text-color);}
 .nav-link:hover,
 .nav-link:focus
 .nav-list.nav-link.current {
-     color: var(--accet-color);
+     color: var(--accent-color);
  }
+ .current { color: var(--accent-color);} 
 
 
 /* About contacts */
 
 .contact-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     font-family: inherit;
 font-style: normal;
 font-weight: 500;
@@ -104,32 +78,28 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: var(--accet-color);
+color: var(--accent-color);
 
 }
 
     .contact-link { color: var(--secondary-text-color);}
     .contact-link:hover,
-    .contact-link:focus {color: var(--accet-color);}
+    .contact-link:focus {color: var(--accent-color);}
     
-    .contact-mobile {
-        padding-top: 32px;
-        padding-bottom: 32px;}
-        
-    .contact-mobile {font-family: inherit;
+ .contact-mobile {font-family: inherit;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: #757575;
+color: var(--secondary-text-color);
 
 }
 
-    .contact-mobile { color:#757575;}
+    .contact-mobile { color:var(--secondary-text-color);}
     .contact-mobile:hover,
-    .contact-mobile:focus {color: #2196F3;}
+    .contact-mobile:focus {color:var(--accent-color);}
 
 
 
@@ -146,18 +116,19 @@ color: #757575;
     text-align: center;
     letter-spacing: 0.03em;
     
-    color: #212121;
+    color: var(--primary-text-color);
     cursor: pointer;}
 
-    .portfolio-button {color:#212121; background-color:#F5F4FA;}
+    .portfolio-button {color:var(--primary-text-color);
+         background-color: var (--secondary-background-color);}
     .portfolio-button:hover,
-    .portfolio-button:focus{color:#FFFFFF;
-        background-color: #2196F3; 
+    .portfolio-button:focus{color: var (--main-background-color);
+        background-color: var(--accent-color); 
     }
     
 /* About hero */
 .hero {width: 1600px;
-    background-color: #2F303A;
+    background-color: var(--brand-color);
    
 }
 .hero-title {text-align: center;}
@@ -169,7 +140,7 @@ color: #757575;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:#FFFFFF;
+    color:var(--main-background-color);
     }
   
      
@@ -185,16 +156,15 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 cursor: pointer;
- color:#FFFFFF;}
+ color:var(--main-background-color);}
     
- .hero-button { background-color: #2196F3;}
+ .hero-button { background-color: var(--accent-color);}
     .hero-button:hover,
     .hero-button:focus{
-        background-color:  #188CE8;
+        background-color:  var(--hero-button-color);
     }
    
-/* About list */
-.list, .gallery,.button-list,.nav-list {list-style: none;}
+
 /* About decorations */
 .nav-link,.nav-logo, .contact-link,.contact-mobile, .item {
     text-decoration: none;}
@@ -208,7 +178,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 
-color: #212121;}
+color: var(--primary-text-color);}
 
 /* About studio benefits */
 .benefits{font-family: 'Roboto';
@@ -219,7 +189,7 @@ color: #212121;}
     text-align: center;
     letter-spacing: 0.03em;
     
-    color: #212121;
+    color: var(--primary-text-color);
     }
     /* About "p" Studio*/
 .p-item {font-family: inherit;
@@ -231,7 +201,7 @@ color: #212121;}
     
     letter-spacing: 0.03em;
     
-    color: #757575;
+    color: var(--secondary-text-color);
     }
     /* About "p" Portfolio */
 .p {font-family: inherit;
@@ -243,7 +213,7 @@ color: #212121;}
     
     letter-spacing: 0.03em;
     
-    color: #757575;
+    color: var(--secondary-text-color);
     }
     /* About our company */
 .company {font-family: inherit;
@@ -254,7 +224,7 @@ color: #212121;}
         text-align: center;
         letter-spacing: 0.03em;
         
-        color: #212121;}
+        color: var(--primary-text-color);}
         /*Gallery list portfolio  */
        .gallery-list { font-family: 'Roboto';
 font-style: normal;
@@ -265,7 +235,7 @@ line-height: 2;
 
 letter-spacing: 0.06em;
 
-color: #212121;}
+color: var(--primary-text-color);}
 
 /* Gallery item Portfolio */
 .gallery-item {font-family: 'Roboto';
@@ -277,9 +247,10 @@ line-height: 30px;
 
 letter-spacing: 0.03em;
 
-color: #757575;}
+color: var(--secondary-text-color);}
 
 /* About company list Studio*/
+.team {background-color: var(--secondary-background-color);}
 .company-list {font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -289,7 +260,7 @@ color: #757575;}
     
     letter-spacing: 0.03em;
     
-    color: #212121;}
+    color: var(--primary-text-color);}
    /* About company item Studio*/ 
     .company-item {
         font-family: inherit;
@@ -301,7 +272,7 @@ line-height: 1.18;
 
 letter-spacing: 0.03em;
 
-color: #757575;
+color: var(--secondary-text-color);
 
     }
 
@@ -312,14 +283,14 @@ color: #757575;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;}
+    color:  var(--main-background-color);}
 
-    .footer-logo { color: #FFFFFF;}
-.footer-logo-accent {color:#2196F3 ;}
+    .footer-logo { color: var(--main-background-color);}
+.footer-logo-accent {color: var(--accent-color);}
 
 /* About footer */
 .footer-content{
-    background-color:#2F303A;
+    background-color:var(--brand-color);
 
 }
 .footer-logo, .footer-link,.footer-maps, .footer-phone {text-decoration:none; }
@@ -333,9 +304,9 @@ color: #757575;
     
     letter-spacing: 0.03em;
     
-    color:#FFFFFF} 
+    color:var(--main-background-color)} 
     .footer-maps:hover,
-    .footer-maps:focus {color:#2196F3;}
+    .footer-maps:focus {color:var(--accent-color);}
 
     .footer-link {font-family: inherit;
         font-style: normal;
@@ -347,13 +318,13 @@ color: #757575;
         color:rgba(255, 255, 255, 0.6);
     }    
     .footer-link:hover,
-    .footer-link:focus {color: #2196F3;}
+    .footer-link:focus {color: var(--accent-color);}
 
        .footer-phone {font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
-            line-height: 24px;
+            line-height: 1.71px;
             /* or 171% */
             
             letter-spacing: 0.03em;
@@ -361,7 +332,7 @@ color: #757575;
         }     
             
         .footer-phone:hover,
-        .footer-phone:focus {color: #2196F3;}     
+        .footer-phone:focus {color: var(--accent-color);}     
         
 
         
