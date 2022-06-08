@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="css/styles.css">
         
     <title>portfolio</title>
@@ -17,7 +17,7 @@
     <!-- About header-->
     <header>
         <!--About-nav-->
-        <div class="container-header">
+        <div class="container">
         <nav class="nav">
 <a class="nav-logo" href="./index.html"><span class="nav-logo-accent">Web</span>Studio</a>
 
@@ -35,9 +35,10 @@
         </div>
     </header>
     <!--About main-->
-<main class="main-content">
-    <section>
+<main>
+    <section  class="main-content">
     <h1 class="is-hidden">Услуги</h1>
+    <div class="container">
         <ul class="button-list list">
             <li><button class="portfolio-button" type="button">Все</button></li>
             <li><button class="portfolio-button" type="button">Веб-сайты</button></li>
@@ -47,37 +48,42 @@
         </ul>
     
      <!-- About company-->
-<ul class="gallery list">
-    <li><img src="./images/img8.jpg" alt="Сторінка вебсайта" width="370"><h2 class="gallery-list">Технокряк</h2> <p class="gallery-item">Веб-сайт</p></li>
-    <li><img src="./images/img9.jpg" alt="Дизайн постера" width="370"><h2 class="gallery-list">Постер New Orlean vs Golden Star</h2><p class="gallery-item">Дизайн</p></li>
-    <li><img src="./images/img10.jpg" alt="Емблема" width="370"><h2 class="gallery-list">Ресторан Seafood</h2><p class="gallery-item">Приложение</p></li>
-    <li><img src="./images/img11.jpg" alt="Навушники" width="370"><h2 class="gallery-list">Проект Prime</h2><p class="gallery-item">Маркетинг</p></li>
-    <li><img src="./images/img12.jpg" alt="Дизайнерські коробочки" width="370"><h2 class="gallery-list">Проект Boxes</h2><p class="gallery-item">Приложение</p></li>
-    <li><img src="./images/img13.jpg" alt="Комп'ютер на підставці" width="370"><h2 class="gallery-list">Inspiration has no Borders</h2><p class="gallery-item">Веб-сайт</p></li>
-    <li><img src="./images/img14.jpg" alt="Відкрита книжка" width="370"><h2 class="gallery-list">Издание Limited Edition</h2><p class="gallery-item">Дизайн</p></li>
-    <li><img src="./images/img15.jpg" alt="Надпис з абревіатурою" width="370"><h2 class="gallery-list">Проект LAB</h2><p class="gallery-item">Маркетинг</p></li>
-    <li><img src="./images/img16.jpg" alt="Людина за комп'ютером" width="370"><h2 class="gallery-list">Growing Business</h2><p class="gallery-item">Приложение</p></li>
+    
+<ul class="gallery">
+    <li class="gallery-img"><img src="./images/img8.jpg" alt="Сторінка вебсайта" width="370"><h2 class="gallery-list">Технокряк</h2> <p class="gallery-item">Веб-сайт</p></li>
+    <li class="gallery-img"><img src="./images/img9.jpg" alt="Дизайн постера" width="370"><h2 class="gallery-list">Постер New Orlean vs Golden Star</h2><p class="gallery-item">Дизайн</p></li>
+    <li class="gallery-img"><img src="./images/img10.jpg" alt="Емблема" width="370"><h2 class="gallery-list">Ресторан Seafood</h2><p class="gallery-item">Приложение</p></li>
+    <li class="gallery-img"><img src="./images/img11.jpg" alt="Навушники" width="370"><h2 class="gallery-list">Проект Prime</h2><p class="gallery-item">Маркетинг</p></li>
+    <li class="gallery-img"><img src="./images/img12.jpg" alt="Дизайнерські коробочки" width="370"><h2 class="gallery-list">Проект Boxes</h2><p class="gallery-item">Приложение</p></li>
+    <li class="gallery-img"><img src="./images/img13.jpg" alt="Комп'ютер на підставці" width="370"><h2 class="gallery-list">Inspiration has no Borders</h2><p class="gallery-item">Веб-сайт</p></li>
+    <li class="gallery-img"><img src="./images/img14.jpg" alt="Відкрита книжка" width="370"><h2 class="gallery-list">Издание Limited Edition</h2><p class="gallery-item">Дизайн</p></li>
+    <li class="gallery-img"><img src="./images/img15.jpg" alt="Надпис з абревіатурою" width="370"><h2 class="gallery-list">Проект LAB</h2><p class="gallery-item">Маркетинг</p></li>
+    <li class="gallery-img"><img src="./images/img16.jpg" alt="Людина за комп'ютером" width="370"><h2 class="gallery-list">Growing Business</h2><p class="gallery-item">Приложение</p></li>
 </ul>
+</div>
 </section>
     </main>
     
-        <!--About footer-->
-<footer class="footer-content">
+  <!--About footer-->
+
+<footer>
+
+    <div class="container">
     <a class="footer-logo" href="./index.html"><span class="footer-logo-accent">Web</span>Studio</a>
 <address class="adress">
-     <ul class="footer-adress">
-      <li class="list"><a class="footer-maps" href="https://goo.gl/maps/8fhmesopUyRwjY3u5" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26" </a></li>
-      <li class="list"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-      <li class="list"><a class="footer-phone" href="tel+380991111111">+38 099 111 11 11</a></li>
+     <ul class="footer-adress list link">
+      <li><a class="footer-maps" href="https://goo.gl/maps/8fhmesopUyRwjY3u5" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26" </a></li>
+      <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+      <li><a class="footer-phone" href="tel+380991111111">+38 099 111 11 11</a></li>
      </ul>
 </address>
-     
+</div> 
+  
 
 </footer>
 </body>
 
-</html>
-
+</html>   
 
 
 
