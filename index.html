@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="css/styles.css">
         <title>studio</title>
 </head>
@@ -15,19 +15,19 @@
     <!-- About header-->
     <header class="header">
         <!--About-nav-->
-     <div class="container">
+     <div class="container studio-header">
         <nav class="nav">
-            <a class="nav-logo" href="./portfolio.html"><span class="nav-logo-accent">Web</span>Studio</a>
-    <ul class="nav-list list link">
-        <li><a class="nav-link current" href="./index.html">Cтудия</a></li>
-        <li><a class="nav-link " href="./portfolio.html">Портфолиo</a></li>
-        <li><a class="nav-link " href="./portfolio.html">Контакты</a></li>
+            <a class="nav-logo link" href="./portfolio.html"><span class="nav-logo-accent">Web</span>Studio</a>
+    <ul class="nav-list list ">
+        <li><a class="nav-link link current" href="./index.html">Cтудия</a></li>
+        <li><a class="nav-link link" href="./portfolio.html">Портфолиo</a></li>
+        <li><a class="nav-link link" href="./portfolio.html">Контакты</a></li>
     </ul>
         </nav>
          <!--About contacts-->
-        <ul class="list link">
-            <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-mobile" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list link contacts">
+            <li><a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-mobile link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </div>
     </header>
@@ -35,7 +35,7 @@
 
     <!-- Main content-->
     <!--About main-->
-<main class="main-content">
+
 
       <!--About hero-->   
       <section class="hero">
@@ -81,35 +81,36 @@
                 </div>
             </section>
 
-            <section class="benefits-list">
+            <section class="benefits">
                 <div class="container ">
-                <h2 class="benefits">Чем мы занимаемся</h2>
-            <ul class="list-benefits"> 
+                <h2 class="benefits-title">Чем мы занимаемся</h2>
+            <ul class="benefits-list list"> 
              <li class="benefits-item"><img src="./images/img1.jpg" alt="Людина працює над створенням проекту" width="370" ></li>
              <li class="benefits-item"><img src="./images/img2.jpg" alt="Людина перевіряє схему на комп'ютері" width="370"></li>
              <li class="benefits-item"><img src="./images/img3.jpg" alt="Людина підбирає колір з палітри кольорів" width="370"></li>
             </ul>
                 </div>
              </section>
-                 <section class="team">
+                 
                 <div class="container">
+                    <div class="team">
                      <h2 class="company">Наша команда</h2>
             <ul class="team-list list">
              
-             <li><img src="./images/img4.jpg" alt="Игорь Демьяненкo" width="270">
+             <li class="card-set"><img src="./images/img4.jpg" alt="Игорь Демьяненкo" width="270">
                     <h3 class="company-list">Игорь Демьяненко</h3>
                     <p class="company-item">Product Designer</p>
                 </li>
-                 <li><img src="./images/img5.jpg" alt="Ольга Репина" width="270">
+                 <li class="card-set"><img src="./images/img5.jpg" alt="Ольга Репина" width="270">
                     <h3 class="company-list">Ольга Репина</h3>
                     <p class="company-item">Frontend Developer</p>
                 </li>
-                 <li><img src="./images/img6.jpg" alt="Николай Тарасов"  width="270">
+                 <li class="card-set"><img src="./images/img6.jpg" alt="Николай Тарасов"  width="270">
                     <h3 class="company-list">Николай Тарасов</h3>
                     <p class="company-item">Marketing</p>
                 
                 </li>
-                 <li><img src="./images/img7.jpg" alt="Михаил Ермаков" width="270">
+                 <li class="card-set"><img src="./images/img7.jpg" alt="Михаил Ермаков" width="270">
                 
                  <h3 class="company-list">Михаил Ермаков</h3>
                  <p class="company-item">UI Designer</p>
@@ -118,22 +119,24 @@
              </ul>  
              
             </div>
-                 </section>
+                 </div>
    </main>
 <!--About footer-->
 
 <footer>
 
     <div class="container">
-    <a class="footer-logo" href="./index.html"><span class="footer-logo-accent">Web</span>Studio</a>
+        <div class="footer">
+    <a class="footer-logo link" href="./index.html"><span class="footer-logo-accent">Web</span>Studio</a>
 <address class="adress">
      <ul class="footer-adress list link">
-      <li><a class="footer-maps" href="https://goo.gl/maps/8fhmesopUyRwjY3u5" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26" </a></li>
-      <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-      <li><a class="footer-phone" href="tel+380991111111">+38 099 111 11 11</a></li>
+      <li><a class="footer-maps link" href="https://goo.gl/maps/8fhmesopUyRwjY3u5" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26" </a></li>
+      <li><a class="footer-link link" href="mailto:info@example.com">info@example.com</a></li>
+      <li><a class="footer-phone link" href="tel+380991111111">+38 099 111 11 11</a></li>
      </ul>
 </address>
 </div> 
+</div>
   
 
 </footer>
